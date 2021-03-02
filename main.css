@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    overflow: hidden;
+    min-height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color:rgb(243, 236, 236);
+
+    background-size: cover;
+    
+    overflow-y: auto;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    padding: 2em;
+    border-radius: 8px;
+    transform: translate(50%, 50%);
+    margin: 0em 3em;
+    top: -45%;
+    left: -13%
+}
+
+.justi {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+.menu-tabs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    width: 200px;
+    
+    
+    
+
+}
+
+.menu-buttons {
+    
+    background-color:rgb(87, 87, 87);;
+    position: fixed;
+    height: 100vh;
+}
+
+.menu-tab {
+    padding: 1em 1em;
+    font-size: 13px;
+    background-color:  rgb(87, 87, 87);;
+    border-top:1px solid rgb(28, 24, 24);
+    border-style: groove;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: 0px -1px 3px 0px #1c2833;
+    
+    transition: background-color .3s;
+
+}
+.third-tab-button {
+    border-bottom:1px solid rgb(28, 24, 24);
+    outline: none;
+    box-shadow: 0px -1px 3px 0px #1c2833;
+}
+.box-form {
+    position: relative;
+}
+ 
+
+.button_dis {
+    
+    
+    background-color:  rgb(87, 87, 87);
+    border-top:1px solid rgb(28, 24, 24);
+    border-style: groove;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    
+    color: #fff;
+    
+    outline: none;
+    box-shadow: 0px -1px 3px 0px #1c2833;
+    
+    transition: background-color .3s;
+}
+
+.add-btn {
+    padding: 0.2em 2em;
+    margin-top: 2em;
+    border-radius: 5px;
+    
+    background-color: rgb(221, 221, 221);
+    cursor: pointer;
+}
+
+.menu-section {
+    display: flex;
+   
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    /* width: 600px; */
+}
+
+.box-form label {
+    font-size: 23px;
+    color: rgb(90, 91, 94);
+    margin-bottom: 0.5em;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.box-form input {
+    font-size: 16px;
+}
+
+#title-text {
+    padding: 1em;
+    margin-bottom: 2em;
+    width: 100%;
+    border-radius: 3px;
+    border: rgb(243, 236, 236);
+    
+}   
+textarea {
+    max-width: 500px;
+    min-width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    border: rgb(243, 236, 236);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.message::-webkit-input-placeholder {
+    
+     padding-top: 15px;
+     padding-left: 15px;
+ }
+ 
+ .message::-moz-input-placeholder {
+    
+    padding-top: 15px;
+    padding-left: 15px
+ }
+ 
+ .message:-moz-input-placeholder {
+    
+    padding-top: 15px;
+    padding-left: 15px
+ }
+ 
+ .message:-ms-input-placeholder {
+    
+    padding-top: 15px;
+    padding-left: 15px
+ }
+
+.menu-tab:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+/* .menu-tab:focus {
+    outline: 1px solid rgb(69, 108, 192);
+} */
+.menu-tab-active {
+    background-color: rgb(221, 221, 221);
+    color: black;
+}
+
+
+
+h3 {
+    margin: 1em 0em;
+}
+
+
+
+/* PREVIEW SECTION */
+#third-tab 
+    {
+      
+    height: 100vh;
+    /* width: 100vw; */
+    /* background-color: #fff; */
+    position: absolute;
+    left: 250px;
+}
+
+img {
+        max-width: 100%;
+        max-height: 80%;
+        display: block; /* remove extra space below image */
+}
+
+.box {
+    margin: 70px 50px;
+    /* position: absolute; */
+    width: 300px;
+    height: 300px;
+    
+    
+}
+
+.box h2 {
+    font-size: 23px;
+}
+.box p {
+    font-size: 16px;
+}
+
+.content-article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    right: 200px;
+    
+}
+
+/* DETAILS */
+
+body nav {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    width: 100%;
+    
+}
+.container {
+    position: relative;
+    
+    width: 600px;
+}
+
+.container p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.container h1 {
+    margin-top: 1em;
+    font-size: 33px;
+}

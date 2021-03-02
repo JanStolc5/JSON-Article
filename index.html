@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="menu-buttons">
+        <div class="menu-tabs">
+            <button data-id="first-tab" onclick="showInfo('first-tab')" class="menu-tab menu-tab-active">Add article</button>
+            <button data-id="second-tab" onclick="showInfo('second-tab')" class="menu-tab">Edit article</button>
+            <button data-id="third-tab" onclick="showInfo('third-tab')" class="menu-tab third-tab-button">Preview</button>
+
+            <button class="button_dis" ></button>
+        </div>
+
+        
+    </div>
+
+
+    <div class="justi">
+        <div class="wrapper">
+
+            <div class="menu-section" id="first-tab">
+                <form action="">
+                    <div class="box-form">
+                        <label for="title">Create a New Article</label>
+                        <input type="text" id="title-text" placeholder="Enter the title of the article">
+
+                        <textarea class="message" type="text" placeholder="Enter the content of the article"></textarea>
+                        <button class="add-btn">Add</button>
+                    </div>
+                </form>    
+            </div>
+            <!-- <div class="menu-section" id="second-tab" style="display: none;">
+                <h3>Edit</h3>
+                
+
+            </div> -->
+            
+        </div>
+        <div class="menu-section" id="third-tab" style="display: none;">
+                <div class="content-article "> 
+
+                    <!-- <div class="box" id="1">
+                        <img src="https://loremflickr.com/320/220/dog" alt="">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dicta culpa doloribus laudantium, velit quisquam doloremque maiores?</p>
+                    </div>            
+                    <div class="box" id="1">
+                        <img src="https://source.unsplash.com/collection/888146/320x220" alt="">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dicta culpa doloribus laudantium, velit quisquam doloremque maiores?</p>
+                    </div>            
+                    <div class="box" id="1">
+                        <img src="https://cdn.pixabay.com/photo/2017/11/30/22/50/sainte-chapelle-2989682_960_720.jpg" alt="">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dicta culpa doloribus laudantium, velit quisquam doloremque maiores?</p>
+                    </div>            
+                    <div class="box" id="1">
+                        <img src="https://cdn.pixabay.com/photo/2017/11/30/22/50/sainte-chapelle-2989682_960_720.jpg" alt="">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dicta culpa doloribus laudantium, velit quisquam doloremque maiores?</p>
+                    </div>            
+                    <div class="box" id="1">
+                        <img src="https://cdn.pixabay.com/photo/2017/11/30/22/50/sainte-chapelle-2989682_960_720.jpg" alt="">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dicta culpa doloribus laudantium, velit quisquam doloremque maiores?</p>
+                    </div>            
+                    <div class="box" id="1">
+                        <img src="https://cdn.pixabay.com/photo/2017/11/30/22/50/sainte-chapelle-2989682_960_720.jpg" alt="">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dicta culpa doloribus laudantium, velit quisquam doloremque maiores?</p>
+                    </div>            
+                    <div class="box" id="1">
+                        <img src="https://cdn.pixabay.com/photo/2017/11/30/22/50/sainte-chapelle-2989682_960_720.jpg" alt="">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dicta culpa doloribus laudantium, velit quisquam doloremque maiores?</p>
+                    </div>            
+                    <div class="box" id="1">
+                        <img src="https://cdn.pixabay.com/photo/2017/11/30/22/50/sainte-chapelle-2989682_960_720.jpg" alt="">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dicta culpa doloribus laudantium, velit quisquam doloremque maiores?</p>
+                    </div>            
+                    <div class="box" id="1">
+                        <img src="https://cdn.pixabay.com/photo/2017/11/30/22/50/sainte-chapelle-2989682_960_720.jpg" alt="">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dicta culpa doloribus laudantium, velit quisquam doloremque maiores?</p>
+                    </div>            
+                    <div class="box" id="1">
+                        <img src="https://cdn.pixabay.com/photo/2017/11/30/22/50/sainte-chapelle-2989682_960_720.jpg" alt="">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dicta culpa doloribus laudantium, velit quisquam doloremque maiores?</p>
+                    </div>             -->
+             </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="scriptA.js"></script>
+</body>
+</html>
