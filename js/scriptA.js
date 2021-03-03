@@ -37,22 +37,24 @@ const getPosts = async () => {
 
     
 
-    let uri = 'http://localhost:3000/articles';
-    console.log(uri);
+    let url = 'http://localhost:3000/articles';
     
-    const res = await fetch(uri);
+    
+    const res = await fetch(url);
     const articles = await res.json();
     
 
-    let template = '';
+    let template = ''; //dopytac o to czemu pusty string??
     articles.forEach(el => {
         template += `
         <div class ="box">
-        <img src="https://source.unsplash.com/collection/888146/320x220">
+        <img src="${el.img}">
             <h2>${el.title}</h2>
             <p>${el.body.slice(0, 200)}</p>
             <a href ="moredetails.html?id=${el.id}">read more...</a>
-        </div>`
+        </div>
+        `
+        
         
     });
 
@@ -61,7 +63,6 @@ const getPosts = async () => {
 }
 
 window.addEventListener('DOMContentLoaded', () => getPosts ());
-
 
 
 
