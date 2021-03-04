@@ -226,6 +226,10 @@ img {
 .box p {
     font-size: 16px;
 }
+.box a {
+    text-decoration: none;
+    color: #21a1ec;
+}
 
 .content-article {
     display: flex;
@@ -240,12 +244,17 @@ img {
 /* DETAILS */
 
 body nav {
+    
     margin-top: 1em;
     display: flex;
+    position: absolute;
+    /* top: 100%; */
+    right: 50%;
+    transform: translate(50%,0%);
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-    width: 100%;
+    align-items: flex-start;
+    
     
 }
 .container {

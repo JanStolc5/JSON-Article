@@ -1,6 +1,7 @@
 // ARTICLES DETAILS SCRIPT
 const id = new URLSearchParams(window.location.search).get('id');
 const container = document.querySelector('.container');
+const deleteBtn = document.querySelector('.delete-btn');
 
 
 const artDetails = async () => {
@@ -13,19 +14,17 @@ const artDetails = async () => {
     <img src="${article.img}">
     <h1>${article.title}</h1><br>
     <p>${article.body}</p>
-    <div class="btn-container">
-        <button type="submit" class="delete-btn" onclick="deleteFuction(this)" >Delete</button>
-    </div>
+    
     
 
     `;
     container.innerHTML = template2;
 
-}
+};
 
 
 
-window.addEventListener('click', function deleteFuction (el) {
+deleteBtn.addEventListener('click', function deleteFuction (el) {
     
     const res = fetch('http://localhost:3000/articles/'+id, {
         method: 'DELETE'
