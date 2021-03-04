@@ -99,13 +99,24 @@ body {
     transition: background-color .3s;
 }
 
-.add-btn {
+.add-btn, .load-btn, .save-btn {
     padding: 0.2em 2em;
     margin-top: 2em;
+    margin-right: 2em;
     border-radius: 5px;
     
     background-color: rgb(221, 221, 221);
     cursor: pointer;
+}
+
+.save-btn:hover {
+    border-color: rgb(238, 141, 15);
+}
+.add-btn:hover {
+    border-color: rgb(238, 141, 15);
+}
+.load-btn:hover {
+    border-color: rgb(238, 141, 15);
 }
 
 .menu-section {
@@ -130,7 +141,7 @@ body {
     font-size: 16px;
 }
 
-.title-text, .add-img {
+.title-text, .add-img, .id-number {
     padding: 1em;
     margin-bottom: 2em;
     width: 100%;
@@ -181,7 +192,7 @@ textarea {
 } */
 .menu-tab-active {
     background-color: rgb(221, 221, 221);
-    color: black;
+    color: rgb(238, 141, 15);
 }
 
 
@@ -241,6 +252,16 @@ img {
     
 }
 
+/* EDIT SECTION */
+
+#second-tab {
+    height: 100vh;
+    /* width: 100vw; */
+    /* background-color: #fff; */
+    position: absolute;
+    transform: translate(55%, 55%);
+}
+
 /* DETAILS */
 
 body nav {
@@ -288,5 +309,8 @@ body nav {
     
     background-color: rgb(221, 221, 221);
     cursor: pointer;
-    
+}
+
+.delete-btn:hover {
+    border-color: rgb(238, 141, 15);
 }
