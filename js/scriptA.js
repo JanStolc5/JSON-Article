@@ -46,7 +46,7 @@ const getPosts = async () => {
     });
 
     contentArticles.innerHTML = template;
-}
+};
 
 window.addEventListener('DOMContentLoaded', () => getPosts ());
 
