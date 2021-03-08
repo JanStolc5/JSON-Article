@@ -16,7 +16,7 @@ const createPost = async (e) => {
         img: form.img.value
     };
     
-    await fetch('http://localhost:3000/articles', {
+    await fetch('http://localhost:3000/articles/', {
 
         method: 'POST',
 
