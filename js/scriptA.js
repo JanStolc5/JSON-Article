@@ -1,5 +1,6 @@
 const menuSections = document.querySelectorAll('.menu-section');
 const menuTabs = document.querySelectorAll('.menu-tab');
+const searchInput = document.querySelector('.search');
 
 
 const showInfo = id => {
@@ -28,7 +29,7 @@ const contentArticles = document.querySelector('.content-article');
 
 const getPosts = async () => {
 
-    let url = 'http://localhost:3000/articles';
+    let url = 'http://localhost:3000/articles?_sort=id&_order=desc';
  
     const res = await fetch(url);
     const articles = await res.json();
