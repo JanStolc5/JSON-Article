@@ -118,6 +118,9 @@ body {
 .load-btn:hover {
     border-color: rgb(238, 141, 15);
 }
+.edit-btn:hover {
+    border-color: rgb(238, 141, 15);
+}
 
 .menu-section {
     display: flex;
@@ -137,7 +140,7 @@ body {
     font-weight: bold;
 }
 
-.box-form input {
+.box-form, .search input {
     font-size: 16px;
 }
 
@@ -148,7 +151,29 @@ body {
     border-radius: 3px;
     border: rgb(243, 236, 236);
     
-}   
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 2em;
+    width: 100%;
+    
+}
+
+.search input {
+    padding: 1em;
+    /* margin-bottom: 2em; */
+    width: 100%;
+    border-radius: 3px;
+    border: rgb(243, 236, 236);
+    width: 600px;
+}
+
+
+
 textarea {
     max-width: 500px;
     min-width: 100%;

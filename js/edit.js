@@ -1,6 +1,6 @@
 // EDIT ARTICLE
 
-const form = document.querySelector('form');
+const formEdit = document.querySelector('.edit-form');
 const id = new URLSearchParams(window.location.search).get('id');
    
 const inputPut = document.querySelector('#title-edit');
@@ -65,8 +65,10 @@ const editLoadContent = async () => {
 
 
 const deleteFuction = async (el) => {
+    
 
     const res = await fetch('http://localhost:3000/articles/'+id, {
+        
         method: 'DELETE'
     });
 
@@ -75,7 +77,7 @@ const deleteFuction = async (el) => {
 };
 
 
-form.addEventListener('submit', saveFunction);
+formEdit.addEventListener('submit', saveFunction);
 saveBtn.addEventListener('click', deleteFuction);
 
 

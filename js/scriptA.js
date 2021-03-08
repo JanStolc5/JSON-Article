@@ -1,5 +1,6 @@
 const menuSections = document.querySelectorAll('.menu-section');
 const menuTabs = document.querySelectorAll('.menu-tab');
+const searchInput = document.querySelector('.search');
 
 
 const showInfo = id => {
