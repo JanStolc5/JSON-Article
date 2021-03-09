@@ -1,7 +1,7 @@
 // EDIT ARTICLE
 
 const form = document.querySelector('form');
-const id = new URLSearchParams(window.location.search).get('id');
+const id_2 = new URLSearchParams(window.location.search).get('id');
 // const loadBtn = document.querySelector('.load-btn');
 // const saveBtn = document.querySelector('.save-btn');    
 const inputPut = document.querySelector('#title-edit');
@@ -13,7 +13,7 @@ const inputId = document.querySelector('#id-number');
 const editLoadContent = async () => {
 
     
-    const res = await fetch('http://localhost:3000/articles/'+id);
+    const res = await fetch('http://localhost:3000/articles/'+id_2);
     const article = await res.json();
   
     inputId.value = `${article.id}`;
@@ -30,9 +30,9 @@ const editLoadContent = async () => {
     // SAVE EDITED CONTENT FUNCTION
     
     
-    const deleteFuction = (el) => {
+    const deleteFunction2 = (el) => {
     
-        const res = fetch('http://localhost:3000/articles/'+id, {
+        const res = fetch('http://localhost:3000/articles/'+id_2, {
             method: 'DELETE'
         });
     
@@ -59,7 +59,7 @@ const saveFunction = async (e) => {
         body: JSON.stringify(saveCont)
     });
 
-    deleteFuction();
+    deleteFunction2();
     
     window.location.replace('index.html');
     
@@ -72,12 +72,12 @@ const saveFunction = async (e) => {
 
 form.addEventListener('submit', saveFunction);
 
-
-
-
-
-
-
-
-
 window.addEventListener('DOMContentLoaded', () => editLoadContent ());
+
+
+
+
+
+
+
+
