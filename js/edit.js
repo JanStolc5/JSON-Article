@@ -31,8 +31,10 @@ const editLoadContent = async () => {
     
     
     const deleteFunction2 = (el) => {
+        // el.preventDefault();
     
         const res = fetch('http://localhost:3000/articles/'+id_2, {
+            
             method: 'DELETE'
         });
     
@@ -48,6 +50,7 @@ const saveFunction = async (e) => {
         title: form.title.value,
         body: form.body.value,
         img: form.img.value
+        
     };
     
     await fetch('http://localhost:3000/articles',{

@@ -1,4 +1,8 @@
 {
+  "permissions": [
+    "*://developer.mozilla.org/*",
+    "webRequest"
+  ],
   "articles": [
     {
       "title": "Nigeria school abduction: Hundreds of girls released by gunmen",
@@ -67,22 +71,40 @@
       "id": 48
     },
     {
-      "title": "Covid: France approves AstraZeneca vaccine for over-65s",
-      "body": "i huj musi dzialac jjjjjjjjjjjjjjjjjjjjjjjj",
-      "img": "https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png",
-      "id": 60
-    },
-    {
       "title": "Rudzielec",
       "body": "Przodkiem kota domowego jest kot nubijski – według poglądów większości współczesnych naukowców różnice pomiędzy kotem domowym i nubijskim są tak niewielkie, że należą one do tego samego podgatunku. Istnieją rozbieżności w kwestii daty udomowienia kota. Większość źródeł sugeruje lata 4000 – 3700 p.n.e., a miejscem, w którym miało do tego dojść, była Nubia. Istnieją jednak dowody (grób mężczyzny z kotem[7] z Cypru sprzed ok. 7500 r. p.n.e.), że domestykacja kota zaczęła się znacznie wcześniej i trwała kilka tysięcy lat, a jej miejscem był obszar Żyznego Półksiężyca. Już ok. 2000 r. p.n.e. kot był pospolicie hodowany w starożytnym Egipcie, gdzie był zwierzęciem świętym, utożsamianym z boginią Bastet, a zwłoki kotów mumifikowano. Również Germanie kojarzyli go ze swoją boginią płodności Freją, która jeździła powozem zaprzężonym w te zwierzęta. Później zaczęto wykorzystywać go do tępienia gryzoni. Od momentu swego udomowienia kot stał się bohaterem licznych baśni i mitów.\n\nWyhodowano wiele ras kota domowego, różniących się ubarwieniem, wielkością i długością włosów; współczesne wzorce niektórych starszych ras znacznie odbiegają od ich wcześniejszych cech (jak w przypadku kotów perskich czy syjamskich). Znaczna liczba kotów domowych żyje samodzielnie w miastach (w Polsce są to tzw. koty piwniczne lub dachowce).\n<3 <3 <3 <3\n",
       "img": "https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_960_720.jpg",
       "id": 62
     },
     {
-      "title": "TEST 2",
-      "body": "test 2",
+      "title": "Statki",
+      "body": "Statek – każde urządzenie transportowe, które jest zdolne do pokonywania przestrzeni w sposób dla niego charakterystyczny, ale inny niż w oparciu o stały ląd. W szczególności może pływać pod powierzchnią wody, na jej powierzchni, unosić się w atmosferze lub w przestrzeni kosmicznej. Może mieć własny napęd i urządzenia sterujące, lub być uzależniony od innej jednostki.",
+      "img": "https://cdn.pixabay.com/photo/2021/02/01/20/16/yachts-5971866_960_720.jpg",
+      "id": 65
+    },
+    {
+      "title": "gggggggggggggggg",
+      "body": "ddddddddddddddddddddddd",
+      "img": "https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_960_720.jpg",
+      "id": 70
+    },
+    {
+      "title": "TEST 345",
+      "body": "test 3",
       "img": "https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png",
-      "id": 64
+      "id": 71
+    },
+    {
+      "title": "Covid: France approves AstraZeneca vaccine for over-65s",
+      "body": "test test test",
+      "img": "https://cdn.pixabay.com/photo/2013/07/12/17/47/test-pattern-152459_960_720.png",
+      "id": 72
+    },
+    {
+      "title": "jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj",
+      "body": "jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj",
+      "img": "https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_960_720.jpg",
+      "id": 73
     }
   ]
 }
