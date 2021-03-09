@@ -6,6 +6,7 @@ const editBtn = document.querySelector('.edit-btn');
 
 
 
+
 const artDetails = async () => {
     
     const res = await fetch('http://localhost:3000/articles/'+id);

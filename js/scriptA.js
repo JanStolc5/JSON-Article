@@ -1,5 +1,6 @@
 const menuSections = document.querySelectorAll('.menu-section');
 const menuTabs = document.querySelectorAll('.menu-tab');
+const serchInput = document.querySelector('#search');
 
 
 const showInfo = id => {
@@ -26,9 +27,13 @@ const showInfo = id => {
 
 const contentArticles = document.querySelector('.content-article');
 
-const getPosts = async () => {
+const getPosts = async (term) => {
 
     let url = 'http://localhost:3000/articles?_sort=id&_order=desc';
+
+    if(term) {
+        url += `&q=${term}`;
+    }; 
  
     const res = await fetch(url);
     const articles = await res.json();
@@ -47,6 +52,15 @@ const getPosts = async () => {
 
     contentArticles.innerHTML = template;
 };
+
+
+serchInput.addEventListener('keyup', searchFunction = (e) => {
+
+    if(e.keyCode === 13) {
+        getPosts(serchInput.value.trim())
+    };
+    
+});
 
 window.addEventListener('DOMContentLoaded', () => getPosts ());
 
