@@ -28,7 +28,7 @@ const contentArticles = document.querySelector('.content-article');
 
 const getPosts = async () => {
 
-    let url = 'http://localhost:3000/articles';
+    let url = 'http://localhost:3000/articles?_sort=id&_order=desc';
  
     const res = await fetch(url);
     const articles = await res.json();
