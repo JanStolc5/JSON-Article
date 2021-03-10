@@ -1,6 +1,6 @@
 const menuSections = document.querySelectorAll('.menu-section');
 const menuTabs = document.querySelectorAll('.menu-tab');
-const serchInput = document.querySelector('#search');
+const searchInput = document.querySelector('#search');
 
 
 const showInfo = id => {
@@ -54,10 +54,10 @@ const getPosts = async (term) => {
 };
 
 
-serchInput.addEventListener('keyup', searchFunction = (e) => {
+searchInput.addEventListener('keyup', searchFunction = (e) => {
 
     if(e.keyCode === 13) {
-        getPosts(serchInput.value.trim())
+        getPosts(searchInput.value.trim())
     };
     
 });

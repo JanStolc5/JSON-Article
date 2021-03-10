@@ -5,7 +5,6 @@
 }
 
 body {
-    display: flex;
     overflow: hidden;
     min-height: 100vh;
     font-family: 'Roboto Condensed', sans-serif;
@@ -338,7 +337,7 @@ height: 100Vh;
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin-top: 2em;
+    padding-top: 2em;
     width: 100%;
 
 }
