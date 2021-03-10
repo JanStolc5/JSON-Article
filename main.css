@@ -117,6 +117,9 @@ body {
 .load-btn:hover {
     border-color: rgb(238, 141, 15);
 }
+.edit-btn:hover {
+    border-color: rgb(238, 141, 15);
+}
 
 .menu-section {
     display: flex;
