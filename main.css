@@ -158,6 +158,11 @@ textarea {
     font-size: 16px;
 }
 
+#third-tab p {
+    margin-top: 1.5em;
+    color: red;
+    
+}
 .message::-webkit-input-placeholder {
     
      padding-top: 15px;

@@ -41,7 +41,7 @@ const deleteFuction = async (el) => {
 
 const alertFunction = () => {
 
-    if (confirm('Czy jestesś pewien!?')) {
+    if (confirm('Are you sure you want to delete this article?')) {
         deleteFuction();
     } else {
         false
@@ -62,12 +62,6 @@ const editChangeLocation = async (el) => {
         
     
 }    
-
-
-
-
-
-
 
 
 deleteBtn.addEventListener('click', alertFunction);

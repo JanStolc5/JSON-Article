@@ -1,12 +1,12 @@
 
 const form = document.querySelector('form');
-
+const alertTxt = document.querySelector('span');
 
 
 
 
 const createPost = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     
     
 
@@ -34,11 +34,19 @@ const createPost = async (e) => {
 };
 
 
-form.addEventListener('submit', createPost);
 
 
+const alertFunction = (e) => {
+    e.preventDefault();
+    
+    if (form.title.value == '' || form.img.value == '' || form.body.value == '') {
+        alertTxt.innerText = "Please complete all fields";
+    } else {
+        createPost()
+    };
+};
 
-
+form.addEventListener('submit', alertFunction);
 
 
 
