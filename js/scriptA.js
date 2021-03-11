@@ -1,6 +1,10 @@
 const menuSections = document.querySelectorAll('.menu-section');
 const menuTabs = document.querySelectorAll('.menu-tab');
 const searchInput = document.querySelector('#search');
+const incBtn = document.querySelector('.inc-btn');
+const decBtn = document.querySelector('.dec-btn');
+
+let incPage = 1;
 
 
 const showInfo = id => {
@@ -27,16 +31,16 @@ const showInfo = id => {
 
 const contentArticles = document.querySelector('.content-article');
 
-const getPosts = async (term, response) => {
+const getPosts = async (term) => {
 
-    let url = 'http://localhost:3000/articles?_sort=id&_order=desc';
+    let url = `http://localhost:3000/articles?_sort=id&_order=desc&_page=${incPage}&_limit=5`;
 
     if(term) {
         url += `&q=${term}`;
     };
  
     const res = await fetch(url);
-    const articles = await res.json(response);
+    const articles = await res.json();
   
     let template = ''; //dopytac o to czemu pusty string??
     articles.forEach(el => {
@@ -53,9 +57,28 @@ const getPosts = async (term, response) => {
     contentArticles.innerHTML = template;
 };
 
-const Paginated = () => {
+const paginatedInc = () => {
+    incPage++;
 
-}
+    console.log(incPage);
+    getPosts()
+    
+};
+
+const paginatedDec = () => {
+    incPage--;
+
+    console.log(incPage);
+    getPosts()
+    
+};
+ 
+incBtn.addEventListener('click', paginatedInc);
+decBtn.addEventListener('click', paginatedDec);
+
+
+
+
 
 searchInput.addEventListener('keyup', searchFunction = (e) => {
 
