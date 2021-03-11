@@ -27,16 +27,16 @@ const showInfo = id => {
 
 const contentArticles = document.querySelector('.content-article');
 
-const getPosts = async (term) => {
+const getPosts = async (term, response) => {
 
     let url = 'http://localhost:3000/articles?_sort=id&_order=desc';
 
     if(term) {
         url += `&q=${term}`;
-    }; 
+    };
  
     const res = await fetch(url);
-    const articles = await res.json();
+    const articles = await res.json(response);
   
     let template = ''; //dopytac o to czemu pusty string??
     articles.forEach(el => {
@@ -53,6 +53,9 @@ const getPosts = async (term) => {
     contentArticles.innerHTML = template;
 };
 
+const Paginated = () => {
+
+}
 
 searchInput.addEventListener('keyup', searchFunction = (e) => {
 
