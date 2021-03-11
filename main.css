@@ -342,6 +342,7 @@ height: 100Vh;
 
 .search{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -359,3 +360,31 @@ height: 100Vh;
     width: 600px;
 }
 
+.paginte-btns {
+    display: flex;
+    /* flex-direction: column; */
+    text-align: center;
+    /* position: absolute; */
+    align-items: center;
+    /* top: 50%;
+    bottom: 0; */
+    
+}
+/* PAGINATION BTNS */
+
+.dec-btn, .inc-btn{
+    margin: 3em 2em;
+    padding: 0em 2em;
+    border-radius: 5px;
+}   
+
+.page-nr {
+    display: block;
+    margin: 3em 0em;
+}
+
+#first-tab {
+    /* display: flex; */
+    /* flex-direction: column; */
+    height: 100%;
+}
