@@ -5,8 +5,7 @@ const deleteBtn = document.querySelector('.delete-btn');
 const editBtn = document.querySelector('.edit-btn');
 
 
-
-
+// CREATE ARTICLE DETAILS
 const artDetails = async () => {
     
     const res = await fetch('http://localhost:3000/articles/'+id);
@@ -18,18 +17,13 @@ const artDetails = async () => {
     const template2 = `
     <img src="${article.img}">
     <h1>${article.title}</h1><br>
-    <p>${article.body}</p>
+    <p>${article.body}</p>`;
 
-    `;
     container.innerHTML = template2;
-
 };
 
 // DELETE ARTICLES
-
 const deleteFuction = async (el) => {
-
-    
 
     const res = await fetch('http://localhost:3000/articles/'+id, {
         method: 'DELETE'
@@ -37,7 +31,6 @@ const deleteFuction = async (el) => {
     
     window.location.replace('index.html');
 };
-
 
 const alertFunction = () => {
 
@@ -48,10 +41,7 @@ const alertFunction = () => {
     };
 };
 
-
 // EDIT ARTICLES 
-
-
 const editChangeLocation = async (el) => {
  
     let url = 'http://localhost:3000/articles/'+id;
@@ -59,12 +49,8 @@ const editChangeLocation = async (el) => {
     const articles = await res.json();
 
     window.location.replace(`edit.html?id=${articles.id}`);
-        
-    
-}    
-
+};    
 
 deleteBtn.addEventListener('click', alertFunction);
 editBtn.addEventListener('click', editChangeLocation);
-
 window.addEventListener('DOMContentLoaded', () => artDetails ());

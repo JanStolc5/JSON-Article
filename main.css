@@ -120,6 +120,12 @@ body {
 .edit-btn:hover {
     border-color: rgb(238, 141, 15);
 }
+.dec-btn:hover {
+    border-color: rgb(238, 141, 15);
+}
+.inc-btn:hover {
+    border-color: rgb(238, 141, 15);
+}
 
 .menu-section {
     display: flex;

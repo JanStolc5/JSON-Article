@@ -1,16 +1,10 @@
-
 const form = document.querySelector('form');
-const alertTxt = document.querySelector('span');
+const alertTxt = document.querySelector('.alertTxt');
 
-
-
-
+// CREATE POST
 const createPost = async (e) => {
-    // e.preventDefault();
-    
-    
 
-    const cont = {
+        const cont = {
         title: form.title.value,
         body: form.body.value,
         img: form.img.value
@@ -19,7 +13,6 @@ const createPost = async (e) => {
     await fetch('http://localhost:3000/articles', {
 
         method: 'POST',
-
         headers: {
 
                 'Content-Type': 'application/json', //o co chodzi???????//
@@ -29,25 +22,21 @@ const createPost = async (e) => {
     });
 
     form.title.value = '';
-    form.body.value = ''
-        
+    form.body.value = ''  
 };
 
-
-
-
+// COMPLETE ALL FIELDS FUNCTION
 const alertFunction = (e) => {
     e.preventDefault();
     
     if (form.title.value == '' || form.img.value == '' || form.body.value == '') {
         alertTxt.innerText = "Please complete all fields";
     } else {
-        createPost()
+        createPost();
     };
 };
 
 form.addEventListener('submit', alertFunction);
-
 
 
 

@@ -1,13 +1,6 @@
+// TABS TOGLER
 const menuSections = document.querySelectorAll('.menu-section');
 const menuTabs = document.querySelectorAll('.menu-tab');
-const searchInput = document.querySelector('#search');
-const incBtn = document.querySelector('.inc-btn');
-const decBtn = document.querySelector('.dec-btn');
-const pageNr = document.querySelector('.page-nr');
-let incPage = 1;
-
-// TABS TOGLER
-
 const showInfo = id => {
     
     const clasDelate = document.getElementById('third-tab');
@@ -27,6 +20,17 @@ const showInfo = id => {
     
 };
 
+
+(function () {
+
+const searchInput = document.querySelector('#search');
+const incBtn = document.querySelector('.inc-btn');
+const decBtn = document.querySelector('.dec-btn');
+const pageNr = document.querySelector('.page-nr');
+let incPage = 1;
+
+
+
 // GET POSTS FROM JSON
 
 const contentArticles = document.querySelector('.content-article');
@@ -34,7 +38,7 @@ const contentArticles = document.querySelector('.content-article');
 const getPosts = async (term) => {
 
     let url = `http://localhost:3000/articles?_sort=id&_order=desc&_page=${incPage}&_limit=7`;
-     console.log(url)
+
     if(term) {
         url += `&q=${term}`;
     };
@@ -74,6 +78,7 @@ const paginatedInc = () => {
 };
 
 const paginatedDec = () => {
+    getPosts(searchInput.value.trim());
     if (incPage < 1) {
         decBtn.disabled = true;
 
@@ -82,7 +87,6 @@ const paginatedDec = () => {
         incPage--;
     };
 
-    console.log(incPage);
     getPosts()
 };
 
@@ -98,7 +102,7 @@ searchInput.addEventListener('keyup', searchFunction = (e) => {
 });
 
 window.addEventListener('DOMContentLoaded', () => getPosts ());
-
+})();
 
 
 
