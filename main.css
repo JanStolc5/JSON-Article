@@ -9,25 +9,22 @@ body {
     min-height: 100vh;
     font-family: 'Roboto Condensed', sans-serif;
     background-color:rgb(243, 236, 236);
-
     background-size: cover;
-    
     overflow-y: auto;
 }
 
 .wrapper {
-    position: relative;
     display: flex;
+    position: relative;
+    top: -45%;
+    left: -13%;
+    margin: 0em 3em;
     padding: 2em;
     border-radius: 8px;
     transform: translate(50%, 50%);
-    margin: 0em 3em;
-    top: -45%;
-    left: -13%
 }
 
 .justi {
-    /* display: flex; */
     justify-content: center;
     align-items:center;
     margin-left: 200px;
@@ -39,22 +36,16 @@ body {
     flex-direction: column;
     margin-bottom: 2em;
     width: 200px;
-    
-    
-    
-
 }
 
 .menu-buttons {
-    
-    background-color:rgb(87, 87, 87);;
     position: fixed;
     height: 100vh;
+    background-color:rgb(87, 87, 87);;
 }
 
 .menu-tab {
     padding: 1em 1em;
-    font-size: 13px;
     background-color:  rgb(87, 87, 87);;
     border-top:1px solid rgb(28, 24, 24);
     border-style: groove;
@@ -62,48 +53,41 @@ body {
     border-left: none;
     border-right: none;
     cursor: pointer;
+    font-size: 13px;
     color: #fff;
     text-transform: uppercase;
     outline: none;
     box-shadow: 0px -1px 3px 0px #1c2833;
-    
     transition: background-color .3s;
-
 }
 .third-tab-button {
     border-bottom:1px solid rgb(28, 24, 24);
     outline: none;
     box-shadow: 0px -1px 3px 0px #1c2833;
 }
+
 .box-form {
     position: relative;
 }
  
-
 .button_dis {
-    
-    
-    background-color:  rgb(87, 87, 87);
     border-top:1px solid rgb(28, 24, 24);
     border-style: groove;
     border-bottom: none;
     border-left: none;
     border-right: none;
-    
+    background-color:  rgb(87, 87, 87);
     color: #fff;
-    
     outline: none;
     box-shadow: 0px -1px 3px 0px #1c2833;
-    
     transition: background-color .3s;
 }
 
 .add-btn, .load-btn, .save-btn {
-    padding: 0.2em 2em;
     margin-top: 2em;
     margin-right: 2em;
+    padding: 0.2em 2em;
     border-radius: 5px;
-    
     background-color: rgb(221, 221, 221);
     cursor: pointer;
 }
@@ -129,11 +113,9 @@ body {
 
 .menu-section {
     display: flex;
-   
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    flex-wrap: wrap;
-    /* width: 600px; */
 }
 
 .box-form label {
@@ -156,7 +138,8 @@ body {
     border-radius: 3px;
     border: rgb(243, 236, 236);
     
-}   
+}
+
 textarea {
     max-width: 500px;
     min-width: 100%;
@@ -200,9 +183,6 @@ textarea {
     background-color: rgb(221, 221, 221);
 }
 
-/* .menu-tab:focus {
-    outline: 1px solid rgb(69, 108, 192);
-} */
 .menu-tab-active {
     background-color: rgb(221, 221, 221);
     color: rgb(238, 141, 15);
@@ -219,14 +199,9 @@ h3 {
 /* PREVIEW SECTION */
 #third-tab 
     {
-      
-    height: 100vh;
-    /* width: 100vw; */
-    /* background-color: #fff; */
     position: absolute;
+    height: 100vh;
     transform: translate(55%, 55%);
-     
-    
 }
 
 img {
@@ -237,11 +212,8 @@ img {
 
 .box {
     margin: 70px 50px;
-    /* position: absolute; */
     width: 300px;
     height: 300px;
-    
-    
 }
 
 .box h2 {
@@ -262,15 +234,12 @@ img {
     align-items: center;
     align-content: center;
     right: 200px;
-    
 }
 
 /* EDIT SECTION */
 
 #second-tab {
     height: 100vh;
-    /* width: 100vw; */
-    /* background-color: #fff; */
     position: absolute;
     transform: translate(55%, 55%);
 }
@@ -279,21 +248,17 @@ img {
 
 body nav {
     
-    margin-top: 1em;
     display: flex;
     position: absolute;
-    /* top: 100%; */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 1em;
     right: 50%;
     transform: translate(50%,0%);
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    
-    
 }
 .container {
     position: relative;
-    
     width: 600px;
 }
 
@@ -315,11 +280,9 @@ body nav {
 }
 
 .delete-btn, .edit-btn {
-    /* position: absolute; */
     padding: 0.2em 2em;
     margin: 1em 0em;
-    border-radius: 5px;
-    
+    border-radius: 5px;    
     background-color: rgb(221, 221, 221);
     cursor: pointer;
 }
@@ -336,9 +299,9 @@ body nav {
 
 .edit-section {
 display: flex;
+position: relative;
 justify-content: center;
 align-content:center ;
-position: relative;
 align-items: center;
 width: 100%;
 height: 100Vh;
@@ -351,30 +314,23 @@ height: 100Vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     height: 100%;
     padding-top: 2em;
-    width: 100%;
 
 }
 
 .search input {
     padding: 1em;
-    /* margin-bottom: 2em; */
-    width: 100%;
+    width: 600px;
     border-radius: 3px;
     border: rgb(243, 236, 236);
-    width: 600px;
 }
 
 .paginte-btns {
     display: flex;
-    /* flex-direction: column; */
     text-align: center;
-    /* position: absolute; */
     align-items: center;
-    /* top: 50%;
-    bottom: 0; */
-    
 }
 /* PAGINATION BTNS */
 
@@ -382,6 +338,7 @@ height: 100Vh;
     margin: 3em 2em;
     padding: 0em 2em;
     border-radius: 5px;
+    cursor: pointer;
 }   
 
 .page-nr {
@@ -390,7 +347,5 @@ height: 100Vh;
 }
 
 #first-tab {
-    /* display: flex; */
-    /* flex-direction: column; */
     height: 100%;
 }
