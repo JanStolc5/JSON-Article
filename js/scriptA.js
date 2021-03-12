@@ -68,7 +68,9 @@ const getPosts = async (term) => {
 
 const paginatedInc = () => {
     incPage++;
-    getPosts()  
+    getPosts();
+    getPosts(searchInput.value.trim());
+    
 };
 
 const paginatedDec = () => {
