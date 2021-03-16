@@ -1,6 +1,6 @@
 # JSON-Article
 
-![alt text](https://github.com/janStolc5/JSON-Article/blob/master/readme_img/repoarticlesimg_1.JPG?raw=true)
+![mian page](https://github.com/janStolc5/JSON-Article/blob/master/readme_img/repoarticlesimg_1.JPG?raw=true)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## The content of the documentation
 * [General info](#general-info)
@@ -17,3 +17,12 @@
 * Pagination
 * Editing an article
 * Deleting an article
+
+<h3>Adding</h3>
+![addin page](https://github.com/janStolc5/JSON-Article/blob/master/readme_img/repoarticlesimg_2.JPG?raw=true)
+
+<h3>Read more content artcile</h3>
+![addin article](https://github.com/janStolc5/JSON-Article/blob/master/readme_img/repoarticlesimg_3.JPG?raw=true)
+
+<h3>Edidting</h3>
+![editing article](https://github.com/janStolc5/JSON-Article/blob/master/readme_img/repoarticlesimg_3.JPG?raw=true)
