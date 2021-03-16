@@ -234,6 +234,7 @@ img {
     align-items: center;
     align-content: center;
     right: 200px;
+    margin-top: -65px;
 }
 
 /* EDIT SECTION */
@@ -317,6 +318,7 @@ height: 100Vh;
     width: 100%;
     height: 100%;
     padding-top: 2em;
+    z-index: 2;
 
 }
 
@@ -348,4 +350,4 @@ height: 100Vh;
 
 #first-tab {
     height: 100%;
-}
+};

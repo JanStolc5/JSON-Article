@@ -81,13 +81,16 @@ const paginatedDec = () => {
     getPosts(searchInput.value.trim());
     if (incPage < 1) {
         decBtn.disabled = true;
+        
 
     } else if (incPage > 1){  
         decBtn.disabled = false;
         incPage--;
+        
     };
 
     getPosts()
+    getPosts(searchInput.value.trim());
 };
 
 incBtn.addEventListener('click', paginatedInc);
@@ -97,7 +100,8 @@ decBtn.addEventListener('click', paginatedDec);
 searchInput.addEventListener('keyup', searchFunction = (e) => {
 
     if(e.keyCode === 13) {
-        getPosts(searchInput.value.trim());     
+        getPosts(searchInput.value.trim());
+        incPage = 1; 
     };
 });
 
