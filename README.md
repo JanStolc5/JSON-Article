@@ -18,7 +18,8 @@
 * Editing an article
 * Deleting an article
 
-<h3>Adding</h3>
+Adding
+
 ![addin page](https://github.com/janStolc5/JSON-Article/blob/master/readme_img/repoarticlesimg_2.JPG?raw=true)
 
 <h3>Read more content artcile</h3>
