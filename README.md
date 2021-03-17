@@ -68,5 +68,5 @@ For simplicity, open command prompt or Windows PowerShell and type the code belo
   ``` json-server --watch data/database.json```
   
 - the result should look like this:<br>
-
+![mian page](https://github.com/janStolc5/JSON-Article/blob/master/readme_img/repoarticlesimg_5.JPG?raw=true)
 
