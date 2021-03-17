@@ -52,7 +52,8 @@ For simplicity, open command prompt or Windows PowerShell and type the code belo
 - create ```database.json``` file directory where you have a project.
 - in json file, create some json template object:
 
-  ``` {
+  ```
+    {
       "articles": [
           {
           "title": "Lorem, ipsum dolor.",
