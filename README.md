@@ -66,5 +66,7 @@ If you want configure start your application locally, you need to install JSON-S
 - in VS Code (i used it) start powershell terminal.
 - go to the project directly. For example: ```C:\Users\Mike\Documnents\projects\JSON-API\``` and start json-server typing: <br>
   ``` json-server --watch data/database.json```
+  
+- the result should look like this:<br>
 
 
