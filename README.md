@@ -49,7 +49,7 @@ If you want configure start your application locally, you need to install JSON-S
 - For simplicity, open command prompt or Windows PowerShell and type the code below. In this case, directory is irrelevant <br> ```npm install -g json-server```
   
 - create ```database.json``` file directory where you have a project.
-- in json file, create some json template object
+- in json file, create some json template object:
 
   ``` {
       "articles": [
@@ -60,10 +60,11 @@ If you want configure start your application locally, you need to install JSON-S
           "id": 1
           },
         ]
-       }```
+       }
+   ```    
  
 - in VS Code (i used it) start powershell terminal.
-- go to the project directl, for uexeample ```C:\Users\Mike\Documnents\projects\JSON-API\``` and start json-serwer typing <br>
-``` json-server --watch data/database.json
+- go to the project directly. For example: ```C:\Users\Mike\Documnents\projects\JSON-API\``` and start json-server typing: <br>
+  ``` json-server --watch data/database.json```
 
 
