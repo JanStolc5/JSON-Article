@@ -7,6 +7,7 @@
 * [Features](#features)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [License](#license)
 
 ## General info
 <p>I finished my second portfolio project which show us how we can use JS Fetch Api. JS methods used in this project are GET, POST, PUT and DELETE. It is a simple application which allow us adding articles to database JSON and manage it.</p>
@@ -69,4 +70,8 @@ For simplicity, open command prompt or Windows PowerShell and type the code belo
   
 - the result should look like this:<br>
 ![mian page](https://github.com/janStolc5/JSON-Article/blob/master/readme_img/repoarticlesimg_5.JPG?raw=true)
+
+##License
+<a href="MIT">https://github.com/IgorAntun/node-chat/blob/master/LICENSE</a>
+
 
