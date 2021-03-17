@@ -71,7 +71,7 @@ For simplicity, open command prompt or Windows PowerShell and type the code belo
 - the result should look like this:<br>
 ![mian page](https://github.com/janStolc5/JSON-Article/blob/master/readme_img/repoarticlesimg_5.JPG?raw=true)
 
-##License
+## License
 
 <a href="MIT">https://github.com/IgorAntun/node-chat/blob/master/LICENSE</a>
 
