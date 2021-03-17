@@ -41,12 +41,12 @@
 
 If you want configure start your application locally, you need to install JSON-SERVER. Below is showing in which order it must be done.
 
-Insall the latest version <a href="https://nodejs.org/en/">NODE.JS.</a>
+- Insall the latest version <a href="https://nodejs.org/en/">NODE.JS.</a>
 
-Install <a href="https://nodejs.org/en/">NODE.JS</a> according to the instruction.
+- Install <a href="https://nodejs.org/en/">NODE.JS</a> according to the instruction.
 
 
-For simplicity, open command prompt or Windows PowerShell and type the code below. In this case, directory is irrelevant.
+- For simplicity, open command prompt or Windows PowerShell and type the code below. In this case, directory is irrelevant.
 
 ```npm install -g json-server```
 
