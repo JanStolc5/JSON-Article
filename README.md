@@ -73,6 +73,6 @@ For simplicity, open command prompt or Windows PowerShell and type the code belo
 
 ## License
 
-<a href="MIT">https://github.com/IgorAntun/node-chat/blob/master/LICENSE</a>
+<a href="https://github.com/IgorAntun/node-chat/blob/master/LICENSE">MIT</a>
 
 
