@@ -46,7 +46,7 @@ If you want configure start your application locally, you need to install JSON-S
 - Install <a href="https://nodejs.org/en/">NODE.JS</a> according to the instruction.
 
 
-- For simplicity, open command prompt or Windows PowerShell and type the code below. In this case, directory is irrelevant <br> ```npm install -g json-server```
+For simplicity, open command prompt or Windows PowerShell and type the code below. In this case, directory is irrelevant <br> ```npm install -g json-server```
   
 - create ```database.json``` file directory where you have a project.
 - in json file, create some json template object:
