@@ -15,7 +15,7 @@ const createPost = async (e) => {
         method: 'POST',
         headers: {
 
-                'Content-Type': 'application/json', //o co chodzi???????//
+                'Content-Type': 'application/json',
               },
 
         body: JSON.stringify(cont),
@@ -38,34 +38,3 @@ const alertFunction = (e) => {
 
 form.addEventListener('submit', alertFunction);
 
-
-
-
-
-
-
-
-
-
-
-// const data = { username: 'example' };
-
-// fetch('http://localhost:3000/articles', {
-//   method: 'POST', // or 'PUT'
-//   headers: {
-//     'Content-Type': 'application/json', //o co chodzi???????//
-//   },
-//   body: JSON.stringify(data),
-// })
-
-
-
-
-
-// .then(response => response.json())
-// .then(data => {
-//   console.log('Success:', data);
-// })
-// .catch((error) => {
-//   console.error('Error:', error);
-// });sdfasdf
