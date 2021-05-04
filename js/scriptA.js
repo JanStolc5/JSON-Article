@@ -54,7 +54,7 @@ const getPosts = async (term) => {
         incBtn.disabled = false;
     };
   
-    let template = ''; //dopytac o to czemu pusty string??
+    let template = '';
     articles.forEach(el => {
         template += `
         <div class ="box">
